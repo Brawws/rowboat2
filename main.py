@@ -17,6 +17,7 @@ async def on_ready():
         await bot.load_extension("Slash.hello")
         await bot.load_extension("Slash.helps")
         await bot.load_extension("Slash.rowboat")
+        await bot.load_extension("Slash.meme")
         await bot.add_cog(libre.Free(bot))
         synced = await bot.tree.sync()
         print(f'Synced {len(synced)} commands')
